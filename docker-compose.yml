@@ -1,0 +1,10 @@
+tcharts_iplwinners:
+  
+  build: .
+  environment:
+    WORKER_SMTP_PORT: 265
+  command: python app.py
+  volumes:
+    - .:/home/app/tact_chart
+  ports:
+    - "3000:3000"
